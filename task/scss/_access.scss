@@ -1,0 +1,83 @@
+.access {
+    color: #fff;
+    background-color: $hada;
+    padding: 296px 0 70px;
+    position: relative;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        background-color: #D0C5BA;
+        @include sp {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.map {
+    height: 400px;
+    width: 60%;
+    position: absolute;
+    top: 41.6%;
+    left: 40%;
+    @include sp {
+        width: 100%;
+        position: unset;
+    }
+}
+
+.title-access {
+    color: #707070;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 12px;
+    letter-spacing: 10px;
+    margin-left: 100px;
+    @include tab {
+        margin-left: 40px;
+        margin-bottom: 13px;
+    }
+    @include sp {
+        margin-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid ;
+        width: 5em;
+        margin-right: 1.7rem;
+        vertical-align: middle;
+    }
+}
+
+.address {
+    height: 400px;
+    line-height: 40px;
+    margin-left: 100px;
+    padding-top: 100px;
+    @include tab {
+        margin: auto;
+        line-height: 70px;
+        padding-top: 28px;
+        margin-left: 40px;
+    }
+    &_title {
+        font-size: 2.4rem;
+        font-family: Roboto Mono for Powerline, sans-serif;
+        color: #00000038;
+        font-weight: bold;
+        
+    }
+}
+
+.inner-access {
+    width: 100%;
+    padding: 150px 0 70px;
+    margin: 0;
+    max-width: 1500px;
+    @include sp {
+        width: 84%;
+        padding: 150px 0 70px;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+}

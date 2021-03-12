@@ -1,0 +1,74 @@
+.comcept {
+    background:linear-gradient(to bottom,$hada 0%,$hada 40%,#A1938689 40%,#A1938689 100%);
+    &_img1,
+    &_img2 {
+        width: 100%;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.comcept_img1 {
+    background-image: url(../img/concept1.png);
+    width: 65%;
+    background-size: cover;
+    @include sp {
+        width: 50%;
+        background-position: 80%, 50%;
+    }
+}
+
+.comcept_img2 {
+    background-image: url(../img/concept2.png);
+    width: 35%;
+    background-size: cover;
+    margin-left: 12px;
+    @include sp {
+        width: 50%;
+    }
+}
+
+
+.comcept-wrap {
+    display: flex;
+    overflow: hidden;
+    height: 400px;
+    @include tab {
+        height: 200px;
+    }
+}
+
+.sen {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 69px;
+    color: #fff;
+    @include tab {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.comcept {
+    &_sub {
+        font-family: ヒラギノ明朝 Pro, sans-serif;
+        font-size: 4rem;
+        width: 40%;
+        letter-spacing: 16px;
+        min-width: 400px;
+        text-align: center;
+        @include tab {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+    &_desc {
+        width: 39%;
+        @include tab {
+            width: 100%;
+            font-size: 1.6rem;
+            margin-top: 18px;
+        }
+    }
+}
